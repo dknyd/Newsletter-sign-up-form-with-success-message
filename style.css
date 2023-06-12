@@ -1,0 +1,231 @@
+:root{
+  --Tomato: hsl(4, 100%, 67%);
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+
+html{
+  min-height: 100vh;
+}
+
+body{
+  height: 100vh;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Charcoal-Grey);
+}
+
+*{
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.containerSuccessMessage{
+  visibility: hidden;
+  position: absolute;
+}
+
+.containerMain{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 0rem 2rem;
+}
+
+img{
+  width: 100%;
+}
+
+.containerText{
+  padding: 1rem;
+}
+
+h1{
+  color: var(--Dark-Slate-Grey);
+  font-size: 3.5rem;
+}
+
+.textJoin{
+  color: var(--Dark-Slate-Grey);
+}
+
+.textEmail{
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--Dark-Slate-Grey);
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 1rem;
+  
+}
+
+li {
+  list-style-image: url('assets/images/icon-list.svg');
+  padding-bottom: 1rem;
+  color: var(--Dark-Slate-Grey);
+}
+
+.inputEmail{
+  display: block;
+  border-radius: 0.4rem;
+  height: 3.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  border: 1px solid grey;
+  padding-left: 2rem;
+  font-weight: 700;
+}
+
+.inputButton{
+  color: white;
+  background-color: var(--Dark-Slate-Grey);
+  border-radius: 0.4rem;
+  height: 3.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+.inputButton:hover{
+  cursor: pointer;
+  background-color: var(--Tomato);
+}
+
+.inputEmail:hover{
+  cursor: pointer;
+}
+
+
+/* SUCCESS */
+.iconSuccess{
+  width: 4rem;
+  height: 4rem;
+}
+
+.containerSuccessMessage{
+  background-color: white;
+  height: 50rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 3rem;
+}
+
+.containerSuccessMessage .textEmail{
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.containerSuccessMessage .containerText{
+  color: var(--Dark-Slate-Grey);
+  padding: 0px;
+}
+
+.dismissButton{
+  color: white;
+  background-color: var(--Dark-Slate-Grey);
+  border-radius: 0.4rem;
+  height: 3.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: 700;
+  margin-top: auto;
+}
+
+.dismissButton:hover{
+  cursor: pointer;
+  background-color: var(--Tomato);
+
+}
+
+
+/* SUCCESS */
+
+.containerSuccessMessage{
+  height: 80%;
+  border-radius: 0px;
+ }
+
+
+.containerSuccessMessage .textEmail{
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.containerSuccessMessage .containerText{
+  color: var(--Dark-Slate-Grey);
+  padding: 0px;
+}
+
+.dismissButton{
+  color: white;
+  background-color: var(--Dark-Slate-Grey);
+  border-radius: 0.4rem;
+  height: 3.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: 700;
+  margin-top: auto;
+}
+
+.dismissButton:hover{
+  cursor: pointer;
+  background-color: var(--Tomato);
+
+}
+
+
+/* DESKTOP VIEW */
+@media screen and (min-width: 800px) {
+
+  body{
+    background-color: var(--Charcoal-Grey);
+  }
+  .containerMain{
+    width: 55rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .containerText{
+    padding-right: 4rem;
+  }
+
+  img{
+    width: 25rem;
+  }
+  .containerSuccessMessage{
+    height: 30rem;
+    width: 30rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 3rem;
+    border-radius: 3rem;
+  }
+
+
+}
+
+.hidden {
+	visibility: hidden;
+	position: absolute;
+}
+
+.visible {
+	visibility: visible;
+	position: fixed;
+}
+
+
